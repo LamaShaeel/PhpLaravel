@@ -43,6 +43,7 @@ class ItemsController extends Controller
         return view('checkout');
 
     }
+   
    public function getItems(){
        $data=Items::all();
        return view('items',['items'=>$data]);

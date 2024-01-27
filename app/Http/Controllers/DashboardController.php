@@ -132,6 +132,19 @@ class DashboardController extends Controller
 
     }
 
+    public function showInvoice(){
+
+        return view('invoice');
+
+    }
+    public function cart(){
+        $count= DB::table('cart')->get()->count();
+        $data=Items::all();
+        
+        return view('checkout',['co'=>$count,'data'=>$data]);
+
+
+    }
 
 
 }

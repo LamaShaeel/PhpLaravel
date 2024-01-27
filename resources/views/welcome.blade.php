@@ -1,41 +1,57 @@
 @extends('layouts.app')
 @section('content')
-    <?php
-        $c=0;
-        ?>
-<div class="container">
-    <h1 class="alert alert-secondary text-center"> ! Welcome To My Website</h1>
-    @while($c <= $count -1)
-    <div class="row text-center justify-content-center">
-        <div class="col-sm-4 text-center">
-            <a href="{{route('showProduct',['id'=>$data[$c]->id])}}">
-            <div class="card border border-secondary shadow-0 mb-3">
-                <div class="card-body">
-                    <h3>{{$data[$c]->itemGroupName}}</h3>
-                    <h3><i class="bi bi-collection"></i></h3>
-                </div>
-            </div>
-            </a>
-        </div>
-            <?php $c++?>
-        <div class="col-sm-4 text-center">
-            <a href="{{route('showProduct',['id'=>$data[$c]->id])}}">
-                <div class="card border border-secondary shadow-0 mb-3">
-                <div class="card-body">
-                    <h3>{{$data[$c]->itemGroupName}}</h3>
-                    <h3><i class="bi bi-collection"></i></h3>
 
+<?php $c = 0; ?>
+
+<div class="container">
+    <h1 class="alert alert-seco text-center">Welcome Floks!</h1>
+
+    @while($c < $count)
+
+    <div class="row text-center d-flex align-items-center justify-content-center mt-2">
+        <div class="col-sm-4 text-center">
+        <a href="{{route('showProduct',['id'=>$data[$c]->id])}}">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="text-dark">{{$data[$c]->itemGroupName}}</h4>
+                    <h3><i class="bi bi-collection" style="font-size: larger;"></i></h3>
                 </div>
             </div>
-            </a>
+        </a>
         </div>
-        <?php $c++?>
+
+        <?php $c++;?>
+        @if($c < $count)
+        <div class="col-sm-4 text-center">
+        <a href="{{route('showProduct',['id'=>$data[$c]->id])}}">
+            <div class="card">
+                <div class="card-body">
+                    <h4 >{{$data[$c]->itemGroupName}}</h4>
+                    <h3><i class="bi bi-collection"></i></h3>
+                </div>
+            </div>
+        </a>
+        </div>
+        <?php $c++;?>
+        @endif
+
+        @if($c < $count)
+        <div class="col-sm-4 text-center">
+        <a href="{{route('showProduct',['id'=>$data[$c]->id])}}">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="text-dark">{{$data[$c]->itemGroupName}}</h4>
+                    <h3><i class="bi bi-collection"></i></h3>
+                </div>
+            </div>
+        </a>
+        </div>
+        <?php $c++;?>
+        @endif
+        
     </div>
 
     @endwhile
-
-
 </div>
 
 @endsection
-

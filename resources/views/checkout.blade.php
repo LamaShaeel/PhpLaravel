@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
+
     <section class="vh-100" style="background-color: rgba(227,242,253,0.85);">
         <div class="container h-100" dir="ltr">
             <div class="row d-flex justify-content-center align-items-center h-100">
@@ -65,8 +66,8 @@
                     </div>
 
                     <div class="d-flex justify-content-end">
-                        <button type="button" class="btn btn-light btn-lg me-2">Continue shopping</button>
-                        <button type="button" class="btn btn-primary btn-lg">CheckOut</button>
+                    <a href="{{route('welcome')}}"> <button type="button" class="btn btn-light btn-lg me-2">Continue shopping</button></a>
+                       <a href="{{route('showInvoice')}}"> <button type="button" class="btn btn-primary btn-lg">CheckOut</button> </a>
                     </div>
 
                 </div>

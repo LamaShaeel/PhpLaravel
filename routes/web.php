@@ -62,6 +62,10 @@ Route::get('/cpanel', [DashboardController::class, 'displayGItems'])->name('disp
 Route::get('/logout', [DashboardController::class, 'logout'])->name('logout');
 Route::get('/addGItems', [DashboardController::class, 'displayAddItemsPage'])->name('displayAddItemsPage');
 
+Route::get('/invoice', [DashboardController::class, 'showInvoice'])->name('showInvoice');
+
+Route::get('/cart', [DashboardController::class, 'cart'])->name('cart');
+
 Route::get('/addItems', [DashboardController::class, 'displayAddItems'])->name('displayAddItems');
 
 Route::get('/items', [DashboardController::class, 'ShowItem'])->name('ShowItem');

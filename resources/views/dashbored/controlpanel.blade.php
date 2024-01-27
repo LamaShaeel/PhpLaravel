@@ -1,7 +1,7 @@
 @extends('layouts.dashbored')
 @section('content')
-    <div class="container">
-        <div class="row mt-3  d-flex justify-content-center">
+    <div class="container" dir="rtl">
+        <div class="row mt-3  text-center">
             <div class="col-sm-12">
                 <h1 class="alert alert-secondary text-center"> Products Details</h1>
                     <div class="card  border-secondary shadow-0 mb-3">

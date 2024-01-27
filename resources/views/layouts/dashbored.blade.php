@@ -26,7 +26,7 @@
 </head>
 <body dir="rtl">
 <div id="app">
-    <nav class="navbar navbar-expand-lg bg-dark ">
+    <nav class="navbar navbar-expand-lg" style="background: #012842">
         <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">Lama</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,12 +85,12 @@
                 <div class="col-sm-2">
                     <div class="container">
                         <div class="row flex-nowrap">
-                            <div class="col-auto px-2 bg-dark">
+                            <div class="col-auto px-2" style="background: #012842">
                                 <div
                                     class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                                     <a href="/"
                                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                                        <span class="fs-5 d-none d-sm-inline">Menu</span>
+                                        <span class="fs-5 d-none d-sm-inline ">Menu</span>
                                     </a>
                                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
                                         id="menu">
@@ -108,58 +108,18 @@
                                         </li>
                                         <li class="nav-item">
                                             <a href="{{route('displayAddItems')}}" class="nav-link align-middle px-0">
-                                                <i class="bi bi-plus-square text-white "></i><span
+                                                <i class="bi bi-plus-square text-white"></i><span
                                                     class="ms-2 d-none d-sm-inline text-white ">Add item </span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="nav-link px-0 align-middle">
-                                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
+                                            <a href="#" class="nav-link px-0 align-middle text-white">
+                                            <i class="fa-solid fa-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
                                         </li>
+                                
                                         <li>
-                                            <a href="#submenu2" data-bs-toggle="collapse"
-                                               class="nav-link px-0 align-middle ">
-                                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
-                                            <ul class="collapse nav flex-column ms-1" id="submenu2"
-                                                data-bs-parent="#menu">
-                                                <li class="w-100">
-                                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span>
-                                                        1</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span>
-                                                        2</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#submenu3" data-bs-toggle="collapse"
-                                               class="nav-link px-0 align-middle">
-                                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span>
-                                            </a>
-                                            <ul class="collapse nav flex-column ms-1" id="submenu3"
-                                                data-bs-parent="#menu">
-                                                <li class="w-100">
-                                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
-                                                        1</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
-                                                        2</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
-                                                        3</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
-                                                        4</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="nav-link px-0 align-middle">
-                                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span>
+                                            <a href="#" class="nav-link px-0 align-middle text-white">
+                                            <i class="fa-regular fa-user"></i> <span class="ms-1 d-none d-sm-inline">Customers</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -201,6 +161,7 @@
         </div>
 
     </main>
+
 
 
 
